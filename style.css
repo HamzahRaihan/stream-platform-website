@@ -1,0 +1,350 @@
+/* font */
+@font-face {
+  font-family: montserrat;
+  src: url(font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: montbold;
+  src: url(font/Montserrat-Bold.ttf);
+}
+
+* {
+  font-family: montserrat;
+}
+
+/* Navbar */
+.navbar {
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-dark {
+  background-color: rgba(0, 0, 0) !important;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.navbar-collapse,
+.navbar-nav,
+.nav-item {
+  color: inherit !important;
+}
+
+/* Home */
+.banner {
+  background-image: url("img/movies-collection.jpg");
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  font-size: 80%;
+}
+
+.card-banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  color: white;
+  text-align: center;
+  width: 50rem;
+}
+
+.gradient {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 650px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.3617822128851541) 38%, rgba(20, 20, 163, 0) 100%);
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.432);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 650px;
+}
+
+/* button */
+.btn {
+  border: 1.5px solid #fff;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: 80%;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1.5px solid #fff;
+}
+
+.btn-login {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: montbold;
+}
+
+/* Movies */
+.body-movies {
+  background-color: black;
+}
+
+.container-movies {
+  max-width: 1200px;
+  padding-top: 290px;
+  font-size: xx-large;
+  color: white;
+}
+
+.imghvr-slide-down {
+  border-radius: 9px;
+}
+/* feature */
+.clearfix {
+  max-width: 960px;
+  align-items: center;
+}
+
+.shapedividers_com-2886 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-2886::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 90px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23000000"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23000000"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23000000"/></svg>');
+}
+
+.feature {
+  background-color: black;
+
+  color: white;
+}
+
+.feature-3 {
+  background-color: black;
+
+  color: white;
+}
+
+.movies-head {
+  padding-top: 60px;
+}
+
+.img-fluid {
+  z-index: 1;
+}
+/* Pricing */
+.card {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.list-group-item {
+  font-size: smaller;
+}
+
+.container-pricing,
+.container-pricing,
+.container-login,
+.container-footer {
+  max-width: 960px;
+}
+
+/* Login */
+.body-login {
+  background-image: url("img/movies-login.jpg");
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.login {
+  padding-top: 100px;
+}
+
+.card-login {
+  width: 30rem;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.link-help {
+  font-size: medium;
+  color: white;
+  text-decoration: none;
+}
+
+.link-help:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Swiper */
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+}
+/* Footer */
+.footer {
+  background-color: black;
+  color: grey;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.link {
+  font-size: smaller;
+  color: grey;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 2rem;
+  color: grey;
+}
+
+/* spidermannwh */
+.spidermannwh {
+  background-image: url("img/movies/spdrmannwh.jpg");
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.modal-dialog {
+  padding-left: 70px;
+  padding-top: 100px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .content h1 {
+    font-size: 1.2rem;
+  }
+  .card-banner {
+    width: 20rem;
+  }
+
+  .movies-head {
+    padding-top: 0px;
+  }
+
+  .card-login {
+    width: 100%;
+  }
+
+  .login {
+    padding-top: 70px;
+  }
+
+  .footer-main {
+    position: relative;
+    margin-top: 150px;
+  }
+
+  .spidermannwh {
+    background-image: url("img/movies/spdrmannwh.jpg");
+    background-position-x: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 650px;
+  }
+
+  .movies-poster {
+    width: 80%;
+    height: 80%;
+    padding-bottom: 70px;
+    margin-right: 1800px;
+  }
+
+  .container-movies {
+    padding-top: 100px;
+    font-size: xx-large;
+    z-index: 2;
+    color: white;
+  }
+
+  iframe {
+    width: 100%;
+    height: 70%;
+  }
+
+  .modal-dialog {
+    padding-left: 0px;
+    padding-top: 250px;
+  }
+
+  .poster {
+    display: none;
+  }
+}
